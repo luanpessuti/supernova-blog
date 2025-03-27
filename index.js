@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 // Inicializa o Express
 const app = express();
-const PORT = 3000;
+const port = process.env.PORT || 4000;
 
 // Configurações
 app.set('view engine', 'ejs');
