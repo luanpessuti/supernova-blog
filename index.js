@@ -8,6 +8,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+dotenv.config(); // Carrega variáveis do .env
+
 // Inicializa o Express
 const app = express();
 const port = process.env.PORT || 4000;
@@ -38,6 +40,6 @@ app.get('/post/:id', (req, res) => {
 });
 
 // Inicia o servidor
-app.listen(PORT, () => {
-  console.log(`Cosmo está rodando em http://localhost:${PORT} 🚀`);
+app.listen(port, () => {
+  console.log(`Cosmo está rodando em http://localhost:${port} 🚀`);
 });
