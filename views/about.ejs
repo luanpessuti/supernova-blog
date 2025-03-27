@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= title %> | Supernova
+  </title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <%- include('partials/header') %>
+
+    <main class="about-container">
+      <h1 style="text-align: center;">
+        <%= title %>
+      </h1>
+      <p>
+        <%= description %>
+      </p>
+      <p>✨ "Explorando os mistérios do cosmos, um post de cada vez."
+
+        O Supernova é um blog criado para desvendar as maravilhas do universo de forma acessível e fascinante. Aqui,
+        você encontrará desde curiosidades sobre buracos negros e nebulosas até descobertas recentes da astronomia,
+        sempre com um toque de ciência e poesia estelar.</p><br>
+
+        ✨ O que você vai descobrir aqui?
+
+        Fenômenos cósmicos: Supernovas, galáxias distantes, exoplanetas e muito mais.
+
+        Fotos & telescópios: Imagens incríveis do Hubble, James Webb e astrofotógrafos.
+
+        Ciência simplificada: Explicações claras para conceitos complexos do espaço.</p><br>
+
+        ✨ Por trás do código
+        Este blog foi desenvolvido com:
+
+        Node.js e Express para a estrutura back-end.
+
+        EJS como template engine para páginas dinâmicas.
+
+        Design responsivo para ser acessível em qualquer dispositivo.
+
+        O projeto é open-source e está disponível no GitHub para quem quiser contribuir ou entender como foi feito.</p><br>
+
+      <p>"O universo é grande, mas a curiosidade humana é maior ainda."</p>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+
+</html>

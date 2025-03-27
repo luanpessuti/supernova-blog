@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/* Estilos globais */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Exo 2", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/home-2.jpg);
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faz o conteúdo principal (main) ocupar o espaço restante */
+main {
+    flex: 1;
+}
+
+h1 {
+    color: #C84B31;
+}
+
+/* Cores personalizadas */
+:root {
+    --cosmo-primary: #C84B31;
+    --cosmo-dark: #191919;
+}
+
+.navbar {
+    background: rgba(46, 33, 26, 0.7);
+    /* Cor base */
+    backdrop-filter: blur(10px);
+    /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px);
+    /* Para compatibilidade */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Borda sutil */
+}
+
+.nav-link, .navbar-brand {
+    color: #C84B31;
+    font-weight: 600;
+    font-size: large;
+}
+
+.navbar-brand:hover {
+    color: #ECDBBA;
+}
+
+.nav-link:hover{
+    color: #ECDBBA;
+}
+
+
+.btn-primary {
+    color: #191919;
+    background-color: #C84B31;
+    border-color: #191919;
+}
+
+.btn-primary:hover {
+    background-color: #ECDBBA;
+    border-color: #C84B31;
+    color: #C84B31;
+}
+
+.about-container {
+    background: rgba(46, 33, 26, 0.7);
+    /* Cor base */
+    backdrop-filter: blur(10px);
+    /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px);
+    /* Para compatibilidade */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Borda sutil */
+}
+
+.card {
+    background: rgba(46, 33, 26, 0.7);
+    /* Cor base */
+    backdrop-filter: blur(10px);
+    /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px);
+    /* Para compatibilidade */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Borda sutil */
+}
+
+.card-body {
+    color: white;
+    /* Texto branco para contrastar */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+/* Estilos da página de post individual */
+.post-container {
+    background: rgba(46, 33, 26, 0.7);
+    /* Cor base */
+    backdrop-filter: blur(10px);
+    /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px);
+    /* Para compatibilidade */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Borda sutil */
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.post-content {
+    margin: 2rem 0;
+    line-height: 1.8;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #C84B31;
+    text-decoration: none;
+}
+
+/* Estilos da página Sobre */
+.about-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+/* Estilos para a equipe e redes sociais */
+.team-list {
+    list-style: none;
+    padding: 0;
+}
+
+.team-list li {
+    background: #1a1a2e;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+}
+
+.social-media {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #16213e;
+    border-radius: 8px;
+}
+
+
+/* Estilos do footer (opcional) */
+footer {
+    border-top: 1px solid transparent;
+    background: rgba(46, 33, 26, 0.7);
+    /* Cor base */
+    backdrop-filter: blur(10px);
+    /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px);
+    /* Para compatibilidade */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Borda sutil */
+    padding: 1rem 0;
+    margin-top: auto;
+    /* Empurra para baixo */
+}
+
+footer a:hover {
+    color: var(--cosmo-primary) !important;
+    transition: color 0.3s;
+}

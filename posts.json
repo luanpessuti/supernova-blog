@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Buracos Negros",
+      "content": "Buracos negros são regiões do espaço onde a gravidade é tão forte que nada — nem mesmo a luz — consegue escapar. Eles se formam quando estrelas massivas colapsam no fim de suas vidas. Apesar de não os vermos diretamente, os cientistas detectam sua presença pela forma como afetam estrelas e gases ao redor. Um mistério que ainda esconde muitos segredos!",
+      "author": "Luan Pessuti",
+      "date": "01-03-2025",
+      "image": "blackhole.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Nebulosa de Órion",
+      "content": "A Nebulosa de Órion é uma das mais belas e brilhantes do céu noturno, visível até a olho nu! Localizada na 'Espada' da constelação de Órion, ela é um gigantesco berçário estelar, onde novas estrelas nascem a partir de nuvens de gás e poeira. Suas cores vibrantes revelam a intensa atividade cósmica que acontece lá dentro.",
+      "author": "Luan Pessuti",
+      "date": "05-03-2025",
+      "image": "orion.jpg"
+    },
+    {
+      "id": 3,
+      "title": "A Via Láctea",
+      "content": "A Via Láctea é a galáxia em que vivemos, uma imensa espiral com bilhões de estrelas, incluindo o nosso Sol. Seu nome vem do aspecto 'leitoso' que vemos no céu — na verdade, estamos enxergando apenas um dos seus braços! No centro dela, há um buraco negro supermassivo, mas estamos a uma distância segura, orbitando em um dos cantos mais tranquilos.",
+      "author": "Luan Pessuti",
+      "date": "15-03-2025",
+      "image": "milkyway.jpg"
+    }
+  ]

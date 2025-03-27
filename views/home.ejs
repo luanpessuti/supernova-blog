@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supernova</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main class="posts-container">
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Supernova News</h1>
+      <div class="row">
+        <% posts.forEach(post => { %>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <% if (post.image) { %>
+                <img src="/images/<%= post.image %>" class="card-img-top" alt="<%= post.title %>">
+              <% } %>
+              <div class="card h-100"> <!-- Altura total do container pai -->
+                <div class="card-body d-flex flex-column">
+                  <!-- Cabeçalho (título e metadados) -->
+                  <div>
+                    <h5 class="card-title"><%= post.title %></h5>
+                    <p class="card-text"><small>Por <%= post.author %> • <%= post.date %></small></p>
+                  </div>
+              
+                  <!-- Conteúdo (ocupa espaço disponível) -->
+                  <p class="card-text flex-grow-1 mt-2"><%= post.content.substring(0, 250) %>...</p>
+              
+                  <!-- Botão FIXO no rodapé do card -->
+                  <div class="mt-auto pt-2"> <!-- "mt-auto" empurra para baixo -->
+                    <a href="/post/<%= post.id %>" class="btn btn-primary w-100">Ler mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

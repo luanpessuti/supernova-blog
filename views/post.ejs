@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= post.title %> | Cosmo</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main class="post-container">
+    <article>
+      <h1><%= post.title %></h1>
+      <p class="post-meta">Por <strong><%= post.author %></strong> • Publicado em <%= post.date %></p>
+      
+      <% if (post.image) { %>
+        <img src="/images/<%= post.image %>" alt="<%= post.title %>" class="post-image">
+      <% } %>
+
+      <div class="post-content">
+        <%= post.content %>
+      </div>
+
+      <a href="/" class="back-link">← Voltar para a Home</a>
+    </article>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>
